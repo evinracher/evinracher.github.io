@@ -1,0 +1,9 @@
+:root {
+  /* colors */
+  --bg-color: #3d3d57;
+  --bg-second-color: rgba(22, 30, 46, 0.95);
+  --primary-color: #508acc;
+  --f-primary-color: #c1c1e8;
+  --white: white;
+  --gray: #b0becf;
+}

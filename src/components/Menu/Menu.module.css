@@ -1,0 +1,25 @@
+@import "../../styles/vars.css";
+
+.icon {
+  cursor: pointer;
+}
+
+.menu {
+  list-style-type: none;
+  background-color: var(--bg-second-color);
+  position: absolute;
+  right: 10px;
+  width: 200px;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li {
+  margin: 10px 0;
+}

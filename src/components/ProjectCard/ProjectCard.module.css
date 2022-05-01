@@ -1,0 +1,59 @@
+@import "../../styles/vars.css";
+
+.card {
+  position: relative;
+  background-color: var(--primary-color);
+  max-width: 360px;
+  height: 460px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+
+.link {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--gray);
+  display: flex;
+  height: 60%;
+  /* border: 1px solid white; */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.link:hover img {
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0.6;
+}
+
+.img {
+  height: 100%;
+}
+
+.content {
+  padding: 0 0.5rem;
+}
+
+.description {
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.repoLink {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}

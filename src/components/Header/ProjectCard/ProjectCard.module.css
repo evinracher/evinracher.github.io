@@ -1,0 +1,60 @@
+@import "../../../styles/vars.css";
+
+.card {
+  background-color: var(--primary-color);
+  max-width: 350px;
+  height: 450px;
+  border-radius: 6px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding-bottom: 0.5rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.link {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--gray);
+  display: flex;
+  height: 60%;
+  /* border: 1px solid white; */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.link:hover img {
+  background-color: rgba(100, 100, 100, 0.5);
+  opacity: 0.6;
+}
+
+.img {
+  height: 100%;
+}
+
+.content {
+  padding: 0 0.5rem;
+}
+
+.description {
+  margin: 0.5rem 0;
+}
+
+.repoLink {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}

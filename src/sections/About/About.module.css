@@ -1,0 +1,15 @@
+@import "../../styles/vars.css";
+
+.about {
+  margin-top: 4rem;
+  height: 40%;
+}
+
+.title {
+  font-size: 4rem;
+  cursor: default;
+}
+
+.description {
+  font-size: 2rem;
+}

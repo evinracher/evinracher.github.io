@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { TechsList } from "../../TechsList";
+import { TechsList } from "../TechsList";
 import s from "./ProjectCard.module.css";
 
 export const ProjectCard = ({ project }) => {
@@ -13,15 +13,15 @@ export const ProjectCard = ({ project }) => {
         <b>{project.name}</b>
         <p className={s.description}>{project.description}</p>
         <TechsList techs={project.techs} />
-        <a
-          className={s.repoLink}
-          href={project.repo}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub size="1.5rem" />
-        </a>
       </div>
+      <a
+        className={s.repoLink}
+        href={project.repo}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <FaGithub size="1.5rem" />
+      </a>
     </div>
   );
 };

@@ -1,3 +1,7 @@
+# My portfolio
+
+favicon from: https://www.websiteplanet.com/webtools/favicon-generator/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

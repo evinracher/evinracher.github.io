@@ -7,7 +7,7 @@ export const About = () => {
       <h1 className={s.title}>Evinracher</h1>
       <p className={s.description}>
         I am a system engineer, passionate about technology and learning.
-        Working as React developer and content maintainer at Perficient.
+        Working as a React developer and content maintainer at Perficient.
       </p>
     </section>
   );

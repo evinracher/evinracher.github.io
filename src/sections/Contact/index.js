@@ -17,7 +17,11 @@ export const Contact = () => {
             </a>
           </li>
           <li className={s.link}>
-            <a href="/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/kevin-parra-60863b15a/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin size="2rem" />
             </a>
           </li>

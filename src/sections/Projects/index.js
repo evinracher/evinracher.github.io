@@ -9,13 +9,14 @@ export const Projects = () => {
     <section id="projects">
       <h1>Projects</h1>
       <p>
-        These are some of my projects. You can find more on my{" "}
+        These are some of my recent projects. You can explore additional work on
+        my{" "}
         <a
           href="https://github.com/evinracher"
           target="_blank"
           rel="noreferrer"
         >
-          github profile.
+          GitHub profile
         </a>
       </p>
       <div className={s.container} data-tip data-for="test1">
@@ -23,6 +24,13 @@ export const Projects = () => {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
+
+      <p>
+        <strong>Note:</strong> My commercial projects remain private, as they
+        are owned by the companies I&rsquo;ve worked for. The projects showcased
+        in my portfolio are personal or learning-driven initiatives that I built
+        to practice, experiment, and continue improving my skills.
+      </p>
     </section>
   );
 };

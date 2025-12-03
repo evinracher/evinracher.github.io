@@ -12,5 +12,6 @@
 }
 
 .description {
-  font-size: 2rem;
+  text-align: justify;
+  margin: 4rem 0;
 }

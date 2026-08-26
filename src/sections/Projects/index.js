@@ -11,10 +11,11 @@ export const Projects = () => {
     <section id="projects">
       <span className="eyebrow">Selected work</span>
       <div className={s.intro}>
-        <h2>Projects</h2>
+        <h2>Selected projects</h2>
         <p>
-          These are some of my recent projects. You can explore additional work
-          on my{" "}
+          A selection of commercial and personal products where I turn complex
+          ideas into clear, reliable web experiences. Explore more experiments
+          and open-source work on my{" "}
           <a
             href="https://github.com/evinracher"
             target="_blank"
@@ -22,9 +23,7 @@ export const Projects = () => {
           >
             GitHub profile
           </a>
-          . Projects marked <strong>Private</strong> were built for clients I
-          worked with, so they may require a subscription or may not be
-          accessible to the general public.
+          .
         </p>
       </div>
       <div className={s.container}>
@@ -33,11 +32,11 @@ export const Projects = () => {
         ))}
       </div>
       <p className={s.note}>
-        <strong>Note:</strong> My commercial projects remain private, as they
-        are owned by the companies I&rsquo;ve worked for. Except for work
-        explicitly marked as Private, the projects showcased in my portfolio are
-        personal or learning-driven initiatives that I built to practice,
-        experiment, and continue improving my skills.
+        <strong>A note on access:</strong> Projects marked{" "}
+        <strong>Private</strong> are commercial products owned by the companies
+        I worked with and may require a subscription or may not be publicly
+        accessible. All other projects are personal builds created to explore
+        ideas, sharpen my craft, and share my work openly.
       </p>
     </section>
   );

@@ -1,9 +1,9 @@
 export const projects = [
   {
     id: 4,
-    name: "gatstore",
+    name: "Gatstore — Gatsby E-commerce",
     description:
-      "Simulating an online store with different products using Gatsby",
+      "A fast, responsive storefront with product discovery and Stripe-powered checkout.",
     url: "https://gatstore.netlify.app/",
     repo: "https://github.com/evinracher/gatstore",
     techs: ["Gatsby", "React", "Stripe", "Styled Components"],
@@ -12,8 +12,9 @@ export const projects = [
   },
   {
     id: 3,
-    name: "petgram",
-    description: "A react app that allows you to see some fun pet pictures",
+    name: "Petgram — Social Pet Gallery",
+    description:
+      "A mobile-first PWA for discovering and sharing pet photography.",
     url: "https://petgram-evinracher.vercel.app/",
     repo: "https://github.com/evinracher/petgram",
     techs: ["React", "GraphQL", "Apollo", "Styled Components", "PWA"],
@@ -22,9 +23,9 @@ export const projects = [
   },
   {
     id: 2,
-    name: "react-recipes-app",
+    name: "Recipe Finder",
     description:
-      "This is a PWA that uses MealDB API to show different recipes with instructions",
+      "An installable recipe explorer with step-by-step meals from TheMealDB API.",
     url: "https://recipes-app-three.vercel.app/",
     repo: "https://github.com/evinracher/react-recipes-app",
     techs: ["React", "PWA", "Workbox", "MealDB API"],
@@ -33,8 +34,9 @@ export const projects = [
   },
   {
     id: 6,
-    name: "angular-pokemon-app",
-    description: "A simple pokemon app developed using Angular",
+    name: "Pokédex Analytics — Angular",
+    description:
+      "An Angular Pokédex for exploring Pokémon data through search, details, and charts.",
     url: "https://evinracher.github.io/angular-pokemon-app/home",
     repo: "https://github.com/evinracher/angular-pokemon-app",
     techs: ["Angular", "TypeScript", "NgRx", "Angular Material", "Chart.js"],
@@ -43,8 +45,9 @@ export const projects = [
   },
   {
     id: 5,
-    name: "react-pokemon-app",
-    description: "A react pokemon app",
+    name: "Pokédex Explorer — React",
+    description:
+      "A responsive React Pokédex with browsable profiles, stats, and data visualizations.",
     url: "https://evinracher.github.io/react-pokemon-app/",
     repo: "https://github.com/evinracher/react-pokemon-app",
     techs: ["React", "Redux", "React Router", "Chart.js"],
@@ -53,9 +56,9 @@ export const projects = [
   },
   {
     id: 1,
-    name: "fe-project-talos-inc",
+    name: "Talos Frontend Experience",
     description:
-      "A vanilla JS landing page developed during my internship at Talos",
+      "A responsive landing page built from scratch during my Talos internship.",
     url: "https://evinracher.github.io/fe-project-talos-inc",
     repo: "https://github.com/evinracher/fe-project-talos-inc",
     techs: ["JavaScript", "HTML", "CSS"],
@@ -67,9 +70,9 @@ export const projects = [
 export const privateProjects = [
   {
     id: "wsj-plus",
-    name: "WSJ+",
+    name: "WSJ+ Subscriber Experiences",
     description:
-      "A premium experiences platform for subscribers of The Wall Street Journal, Barron’s, MarketWatch, and other Dow Jones publications.",
+      "A premium events and experiences platform for Dow Jones publication subscribers.",
     url: "https://www.wsj.com/wsjplus/dashboard/",
     techs: ["React", "TypeScript", "Jest", "RTL", "MSW", "Design Systems"],
     creationDate: "2023 — Present",

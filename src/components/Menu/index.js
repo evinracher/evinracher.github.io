@@ -7,31 +7,55 @@ export const Menu = () => {
   return (
     <div className={s.container}>
       {toggleMenu ? (
-        <CgClose
-          className={s.icon}
-          size="2rem"
-          onClick={() => setToggleMenu(!toggleMenu)}
-        />
+        <button
+          type="button"
+          className={s.menuButton}
+          onClick={() => setToggleMenu(false)}
+          aria-label="Close navigation"
+        >
+          <CgClose size="1.6rem" />
+        </button>
       ) : (
-        <CgMenu
-          className={s.icon}
-          size="2rem"
-          onClick={() => setToggleMenu(!toggleMenu)}
-        />
+        <button
+          type="button"
+          className={s.menuButton}
+          onClick={() => setToggleMenu(true)}
+          aria-label="Open navigation"
+        >
+          <CgMenu size="1.6rem" />
+        </button>
       )}
-      {toggleMenu && (
-        <ul className={s.menu}>
-          <li>
-            <a href="/#">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      )}
+      <ul className={`${s.menu} ${toggleMenu ? s.open : ""}`}>
+        <li>
+          <a href="#about" onClick={() => setToggleMenu(false)}>
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#skills" onClick={() => setToggleMenu(false)}>
+            Skills
+          </a>
+        </li>
+        <li>
+          <a href="#experience" onClick={() => setToggleMenu(false)}>
+            Experience
+          </a>
+        </li>
+        <li>
+          <a href="#projects" onClick={() => setToggleMenu(false)}>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            className={s.contactLink}
+            href="#contact"
+            onClick={() => setToggleMenu(false)}
+          >
+            Let&rsquo;s talk
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

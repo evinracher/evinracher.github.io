@@ -5,9 +5,9 @@ import s from "./Header.module.css";
 export const Header = () => {
   return (
     <header className={s.header}>
-      <h1 className={s.logo}>
-        <a href="/#">Evinracher</a>
-      </h1>
+      <a className={s.logo} href="#about" aria-label="Kevin Parra — home">
+        KP<span>.</span>
+      </a>
       <Menu />
     </header>
   );

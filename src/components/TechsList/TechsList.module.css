@@ -1,5 +1,2 @@
-.techsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
+.techsContainer { display:flex; flex-wrap:wrap; gap:.45rem; }
+.techsContainer span { padding:.4rem .65rem; color:#cfd1d2; border:1px solid var(--border); border-radius:999px; font-family:var(--mono); font-size:var(--text-xs); line-height:1.25; }

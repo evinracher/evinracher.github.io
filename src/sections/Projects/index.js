@@ -1,35 +1,42 @@
 import React from "react";
 import { ProjectCard } from "../../components/ProjectCard";
-import { projects } from "../../data/projects";
+import { projects, privateProjects } from "../../data/projects";
 
 import s from "./Projects.module.css";
 
 export const Projects = () => {
+  const allProjects = [...privateProjects, ...projects];
+
   return (
     <section id="projects">
-      <h1>Projects</h1>
-      <p>
-        These are some of my recent projects. You can explore additional work on
-        my{" "}
-        <a
-          href="https://github.com/evinracher"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub profile
-        </a>
-      </p>
-      <div className={s.container} data-tip data-for="test1">
-        {projects.map((project) => (
+      <span className="eyebrow">Selected work</span>
+      <div className={s.intro}>
+        <h2>Selected projects</h2>
+        <p>
+          A selection of commercial and personal products where I turn complex
+          ideas into clear, reliable web experiences. Explore more experiments
+          and open-source work on my{" "}
+          <a
+            href="https://github.com/evinracher"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub profile
+          </a>
+          .
+        </p>
+      </div>
+      <div className={s.container}>
+        {allProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-
-      <p>
-        <strong>Note:</strong> My commercial projects remain private, as they
-        are owned by the companies I&rsquo;ve worked for. The projects showcased
-        in my portfolio are personal or learning-driven initiatives that I built
-        to practice, experiment, and continue improving my skills.
+      <p className={s.note}>
+        <strong>A note on access:</strong> Projects marked{" "}
+        <strong>Private</strong> are commercial products owned by the companies
+        I worked with and may require a subscription or may not be publicly
+        accessible. All other projects are personal builds created to explore
+        ideas, sharpen my craft, and share my work openly.
       </p>
     </section>
   );

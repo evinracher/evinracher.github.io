@@ -1,5 +1,2 @@
-@import "./styles/vars.css";
-
-.content {
-  padding: 0 5%;
-}
+.content { width:min(1280px,calc(100% - 3rem)); margin:0 auto; }
+@media (max-width:600px) { .content { width:min(100% - 1.5rem,1280px); } }

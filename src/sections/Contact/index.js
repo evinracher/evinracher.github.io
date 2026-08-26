@@ -6,7 +6,7 @@ import s from "./Contact.module.css";
 export const Contact = () => {
   return (
     <section id="contact">
-      <h1>Contact</h1>
+      <span className="eyebrow">Contact</span>
       <div className={s.infoContainer}>
         <h3>Kevin Parra</h3>
         <p>Let&apos;s get in touch</p>
@@ -18,7 +18,7 @@ export const Contact = () => {
           </li>
           <li className={s.link}>
             <a
-              href="https://www.linkedin.com/in/kevin-parra-60863b15a/"
+              href="https://www.linkedin.com/in/evinracher/"
               target="_blank"
               rel="noreferrer"
             >

@@ -5,18 +5,19 @@ import s from "./About.module.css";
 export const About = () => {
   return (
     <section id="about" className={s.about}>
-      <h2 className={s.title}>Welcome to my portfolio!</h2>
-      <div className={s.description}>
-        <p>
+      <div className={s.heroRow}>
+        <h2 className={s.title}>Welcome to my portfolio!</h2>
+        <p className={s.lead}>
           I&rsquo;m a <strong>Senior Frontend Engineer</strong> with{" "}
-          <strong>5 years of experience</strong> in software development,
+          <strong>6 years of experience</strong> in software development,
           specializing in building scalable, user-focused web applications using{" "}
-          <strong>React, Next.js, JavaScript, and TypeScript</strong>. My
-          expertise lies in writing high-quality, maintainable code and ensuring
-          reliable delivery through strong testing practices (
+          <strong>React, Next.js, JavaScript, TypeScript, and Python</strong>.
+          My expertise lies in writing high-quality, maintainable code and
+          ensuring reliable delivery through strong testing practices (
           <em>Jest, React Testing Library</em>) and CI/CD workflows.
         </p>
-
+      </div>
+      <div className={s.details}>
         <p>
           I have strong experience with Agile methodologies (
           <strong>SCRUM and Kanban</strong>), actively participating in daily

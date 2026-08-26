@@ -1,17 +1,9 @@
-@import "../../styles/vars.css";
-
-.about {
-  height: 40%;
-  padding-top: 0;
-}
-
-.title {
-  font-size: 4rem;
-  cursor: default;
-  margin: 0.5rem 0;
-}
-
-.description {
-  text-align: justify;
-  margin: 4rem 0;
-}
+.about { min-height:calc(100vh - 76px); display:flex; flex-direction:column; justify-content:flex-end; gap:clamp(4rem,7vw,6rem); padding-top:clamp(6rem,12vw,10rem); }
+.heroRow { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr); align-items:end; gap:clamp(3rem,9vw,9rem); }
+.title { max-width:760px; font-size:clamp(4rem,9vw,7.5rem); line-height:.86; font-weight:540; margin:0; }
+.title::before { content:"Senior frontend engineer"; display:block; color:var(--accent); font-family:var(--mono); font-size:.75rem; line-height:1; letter-spacing:.16em; text-transform:uppercase; margin-bottom:2rem; }
+.lead { max-width:64ch; margin:0; font-size:1.1875rem; line-height:1.7; }
+.details { display:grid; grid-template-columns:1fr; gap:2.5rem; padding-top:clamp(3rem,5vw,4.5rem); border-top:1px solid var(--border); }
+.details p { width:100%; margin:0; color:#c0c3c4; font-size:var(--text-lg); line-height:1.72; }
+.about strong { color:var(--text); font-weight:600; }
+@media (max-width:980px) { .heroRow { grid-template-columns:1fr; gap:3rem; } .lead { max-width:760px; } }

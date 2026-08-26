@@ -1,6 +1,5 @@
-.container {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+.intro { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:end; margin-bottom:4rem; }
+.intro h2 { margin:0; } .intro p { margin:0; max-width:600px; justify-self:end; font-size:var(--text-lg); line-height:1.7; } .intro a { color:var(--text); text-underline-offset:4px; }
+.container { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+.note { max-width:980px; margin:4rem 0 0; padding:1rem 0 1rem 1.5rem; border-left:3px solid var(--accent); color:#b9bcbd; font-size:var(--text-base); line-height:1.72; }
+@media (max-width:760px) { .intro,.container { grid-template-columns:1fr; } .intro p { justify-self:start; } }
